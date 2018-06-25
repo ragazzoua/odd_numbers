@@ -3,11 +3,22 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        for (int i = 0; i < 10 ; i++) {
-            if (i == 5) break;
-            System.out.println(i + "");
+        String strInt = "123";
+        String strDouble = "123.456";
+        int x;
+        double y;
 
-        }
+        x = Integer.parseInt(strInt);
+        y = Double.parseDouble(strDouble);
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        strInt = String.valueOf(x + 1);
+        strDouble = String.valueOf(y + 1);
+        System.out.println("strInt=" + strInt);
+        System.out.println("strDouble=" + strDouble);
+        String str;
+        str = "num=" + 345;
+        System.out.println(str);
+
     }
 }
